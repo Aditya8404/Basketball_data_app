@@ -18,7 +18,6 @@ dir_of_interest = os.path.join(PARENT_DIR, "resources")
 IMAGE_PATH = os.path.join(dir_of_interest, "images", "nba_img.jpg")
 DATA_PATH = os.path.join(dir_of_interest, "data", "output.csv")
 
-# st.title("Dashboard - Iris Data")
 st.title('NBA Player Stats Explorer')
 
 img = image.imread(IMAGE_PATH)
@@ -28,11 +27,11 @@ df = pd.read_csv(DATA_PATH)
 
 st.header('User Input Features')
 
-# Sidebar - Team selection
+# Team selection
 sorted_unique_team = sorted(df.Tm.unique())
 selected_team = st.multiselect('Team', sorted_unique_team, sorted_unique_team)
 
-# Sidebar - Position selection
+# Position selection
 unique_pos = ['C','PF','SF','PG','SG']
 selected_pos = st.multiselect('Position', unique_pos, unique_pos)
 
