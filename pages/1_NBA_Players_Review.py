@@ -18,6 +18,7 @@ dir_of_interest = os.path.join(PARENT_DIR, "resources")
 IMAGE_PATH = os.path.join(dir_of_interest, "images", "nba_img.jpg")
 DATA_PATH = os.path.join(dir_of_interest, "data", "output.csv")
 
+st.snow()
 st.title('NBA Player Stats Explorer')
 
 img = image.imread(IMAGE_PATH)
